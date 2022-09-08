@@ -6,17 +6,16 @@ This is a simple solution to the "Hashmat" UVA problem on https://onlinejudge.or
 
 ### Files
 
-|   #   | File            | Description                                        |
-| :---: | --------------- | -------------------------------------------------- |
-|   1   | [main.cpp](main.cpp)| Main driver of my program which solves Hashmat problem.|
+| # | File                   | Description                                             |
+|:-:|------------------------|---------------------------------------------------------|
+| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Hashmat problem. |
+| 2 | [in1.txt](in1.txt)     | Sample input for program                                |
+| 3 | [10055.pdf](10055.pdf) | Problem statement and guidelines                        |
 
 ### Instructions
 
 - Just compile main.cpp, then run the executable from the command line but be sure to redirect
 input to a correctly formatted input file.
-- As stated in the guidelines for the UVA problem, "The input contains two numbers in every line. These two numbers in each line denotes the number
-soldiers in Hashmat’s army and his opponent’s army or vice versa. The input numbers are not greater
-than 2^32. Input is terminated by ‘End of File’."
 - Example input below:
 ```
 1 2
