@@ -10,7 +10,7 @@
 using namespace std;
 
 int main() {
-    long B = 0, A = 0;
+    long B = 0, A = 0; // Has to be long int to satisfy size contstraint
     
     while (cin >> A >> B) {
         
