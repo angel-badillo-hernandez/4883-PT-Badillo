@@ -2,17 +2,16 @@
 ### Angel Badillo
 ### Description:
 
-This is a simple solution to the "Hardwood Species" UVA problem on https://onlinejudge.org/. Problem ID 10226.
+This is a simple solution to the "Traffic Lights" UVA problem on https://onlinejudge.org/. Problem ID 161.
 
 ### Files
 
-| # | File                   | Description                                                      |
-|:-:|------------------------|------------------------------------------------------------------|
-| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Hardwood species problem. |
-| 2 | [in1.txt](in1.txt)     | Sample input for program                                         |
-| 3 | [in2.txt](in2.txt)     | Sample input for program                                         |
-| 4 | [in3.txt](in3.txt)     | Sample input for program                                         |
-| 5 | [10226.pdf](10226.pdf) | Problem statement and guidelines                                 |
+| # | File                 | Description                                                    |
+|:-:|----------------------|----------------------------------------------------------------|
+| 1 | [main.cpp](main.cpp) | Main driver of my program which solves Traffic Lights problem. |
+| 2 | [in1.txt](in1.txt)   | Sample input for program                                       |
+| 3 | [in2.txt](in2.txt)   | Sample input for program                                       |
+| 5 | [161.pdf](161.pdf)   | Problem statement and guidelines                               |
 
 ### Instructions
 
