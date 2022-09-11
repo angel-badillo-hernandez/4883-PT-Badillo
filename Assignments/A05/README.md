@@ -16,7 +16,7 @@ This is a simple solution to the "Traffic Lights" UVA problem on https://onlinej
 ### Instructions
 
 - Just compile main.cpp, then run the executable from the command line but be sure to redirect
-input to a correctly formatted input file. Guidelines
+input to a correctly formatted input file.
 - Example Command:
     - `g++ main.cpp -o main`
     - `./main < <inputfile>`
