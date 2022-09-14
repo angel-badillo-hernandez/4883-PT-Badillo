@@ -1,0 +1,8 @@
+# VS Code generated jsons
+.vscode/
+
+# Visual C++ Generated files upon compliation
+*.exe
+*.ilk
+*.obj
+*.pdb
