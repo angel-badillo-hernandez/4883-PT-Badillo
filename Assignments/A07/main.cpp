@@ -22,7 +22,7 @@ using namespace std;
  * @return true if valid arrangement,
  * @return false otherwise
  */
-inline bool isValid(vector<int> trainB, stack<int, vector<int>> station)
+bool isValid(vector<int> trainB, stack<int, vector<int>> station)
 {
     // First coach in train A
     int coachA = 1;
