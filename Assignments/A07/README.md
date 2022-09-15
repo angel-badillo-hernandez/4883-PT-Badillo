@@ -11,7 +11,6 @@ This is a simple solution to the "Rails" UVA problem on https://onlinejudge.org/
 | 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Hardwood species problem. |
 | 2 | [in1.txt](in1.txt)     | Sample input for program                                         |
 | 3 | [in2.txt](in2.txt)     | Sample input for program                                         |
-| 4 | [in3.txt](in3.txt)     | Sample input for program                                         |
 | 5 | [514.pdf](514.pdf)     | Problem statement and guidelines                                 |
 
 ### Instructions
