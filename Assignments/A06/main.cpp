@@ -4,8 +4,6 @@
  * @brief A solution to the Hardwood Species UVA problem.
  * @date 2022-09-04
  * 
- * @copyright Copyright (c) 2022
- * 
  */
 #include <iostream>
 #include <iomanip>

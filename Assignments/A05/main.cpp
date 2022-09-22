@@ -4,8 +4,6 @@
  * @brief A solution to the Traffic Lights UVA problem.
  * @date 2022-09-08
  * 
- * @copyright Copyright (c) 2022
- * 
  */
 #include <iostream>
 #include <iomanip>

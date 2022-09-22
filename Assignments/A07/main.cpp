@@ -4,8 +4,6 @@
  * @brief A solution to the Rails UVA problem.
  * @date 2022-09-15
  *
- * @copyright Copyright (c) 2022
- *
  */
 #include <iostream>
 #include <stack>

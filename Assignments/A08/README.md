@@ -6,13 +6,13 @@ This is a simple solution to the "Scissors Rock Paper" UVA problem on https://on
 
 ### Files
 
-| # | File                   | Description                                                      |
-|:-:|------------------------|------------------------------------------------------------------|
-| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Scissors Rock Paper problem. |
-| 2 | [in1.txt](in1.txt)     | Sample input for program                                         |
-| 3 | [in2.txt](in2.txt)     | Sample input for program                                         |
-| 4 | [in3.txt](in3.txt)     | Sample input for program                                         |
-| 5 | [p10443.pdf](10443.pdf)     | Problem statement and guidelines                                 |
+| # | File                    | Description                                                         |
+|:-:|-------------------------|---------------------------------------------------------------------|
+| 1 | [main.cpp](main.cpp)    | Main driver of my program which solves Scissors Rock Paper problem. |
+| 2 | [in1.txt](in1.txt)      | Sample input for program                                            |
+| 3 | [in2.txt](in2.txt)      | Sample input for program                                            |
+| 4 | [in3.txt](in3.txt)      | Sample input for program                                            |
+| 5 | [p10443.pdf](10443.pdf) | Problem statement and guidelines                                    |
 
 ### Instructions
 
