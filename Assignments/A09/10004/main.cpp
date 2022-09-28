@@ -2,13 +2,12 @@
  * @file main.cpp
  * @author Angel Badillo Hernandez (https://github.com/It-Is-Legend27/)
  * @brief A solution to the Bicoloring problem.
- * @date 2022-09-15
+ * @date 2022-09-22
  *
  */
-
 // Sources:
 // https://replit.com/@rugbyprof/4883Bipartite2?v=1#main.cpp
-// https://www.geeksforgeeks.org/convert-adjacency-list-to-adjacency-matrix-representation-of-a-graph/
+// Minor change from int** dynamic 2D array to vector<vector<int>>
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -17,7 +16,8 @@ using namespace std;
 
 // This function returns true if graph
 // G[V][V] is Bipartite, else false
-bool isBipartite(vector<vector<int>> G, int src, int V) {
+bool isBipartite(vector<vector<bool>> G, int src, int V)
+{
   // Create a color array to store colors
   // assigned to all veritces. Vertex
   // number is used as index in this array.
@@ -43,7 +43,8 @@ bool isBipartite(vector<vector<int>> G, int src, int V) {
 
   // Run while there are vertices
   // in queue (Similar to BFS)
-  while (!q.empty()) {
+  while (!q.empty())
+  {
     // Dequeue a vertex from queue ( Refer http://goo.gl/35oz8 )
     int u = q.front();
     q.pop();
@@ -53,10 +54,12 @@ bool isBipartite(vector<vector<int>> G, int src, int V) {
       return false;
 
     // Find all non-colored adjacent vertices
-    for (int v = 0; v < V; ++v) {
+    for (int v = 0; v < V; ++v)
+    {
       // An edge from u to v exists and
       // destination v is not colored
-      if (G[u][v] && colorArr[v] == -1) {
+      if (G[u][v] && colorArr[v] == -1)
+      {
         // Assign alternate color to this adjacent v of u
         colorArr[v] = 1 - colorArr[u];
         q.push(v);
@@ -77,17 +80,31 @@ bool isBipartite(vector<vector<int>> G, int src, int V) {
 // Driver program to test above function
 int main()
 {
-	int n, l, p0, p1;
-    vector<vector<int>> G;
-    while(cin >> n && n)
+  int n; // # nodes (vertices)
+  int l; // # edges
+  int p0; // start node of edge
+  int p1; // end node of edge
+
+  // 2D vector of bools
+  vector<vector<bool>> G;
+
+  // Read # nodes
+  while (cin >> n && n)
+  {
+    G.resize(n, vector<bool>(n)); // Resize 2d array
+    cin >> l;                     // Read # edges
+
+    // Set edges on graph
+    for (int i = 0; i < l; i++)
     {
-        cin >> l;
-
-        for(int i = 0; i < l; i++)
-        {
-            cin >> p0 >> p1;
-
-        }
+      cin >> p0 >> p1;
+      G[p0][p1] = 1;
+      G[p1][p0] = 1;
     }
-	return 0;
+    
+    // Check if graph is bipartite
+    isBipartite(G, 0, G.size()) ? cout << "BICOLORABLE.\n" : cout << "NOT BICOLORABLE.\n";
+    G.clear();
+  }
+  return 0;
 }
