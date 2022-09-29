@@ -1,10 +1,15 @@
 /**
  * @file main.cpp
  * @author Angel Badillo Hernandez (https://github.com/It-Is-Legend27/)
- * @brief A solution to the Claw Decomposition problem.
+ * @brief A solution to the Sending Email problem.
  * @date 2022-09-29
  *
  */
+// Sources:
+// https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+// Minor change to code. Removed hardcoding and switched C-arrays to std:vector.
+// Changed djikstra function from printing full array of shortest paths to
+// only returning the shortest path from source to destination.
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -27,19 +32,10 @@ int minDistance(int V, vector<int> &dist, vector<bool> &sptSet)
 	return min_index;
 }
 
-// A utility function to print the constructed distance
-// array
-void printSolution(int V, vector<int> dist)
-{
-	cout << "Vertex \t Distance from Source" << endl;
-	for (int i = 0; i < V; i++)
-		cout << i << " \t\t\t\t" << dist[i] << endl;
-}
-
 // Function that implements Dijkstra's single source
 // shortest path algorithm for a graph represented using
 // adjacency matrix representation
-void dijkstra(int V, vector<vector<int>> G, int src)
+int dijkstra(int V, vector<vector<int>> &G, int src, int dest)
 {
     vector<int> dist(V); // The output array. dist[i] will hold the
 				         // shortest
@@ -82,13 +78,13 @@ void dijkstra(int V, vector<vector<int>> G, int src)
 				dist[v] = dist[u] + G[u][v];
 	}
 
-	// print the constructed distance array
-	printSolution(V, dist);
+	return dist[dest];
 }
 
 int main()
 {   
     int N; // # of cases
+	int caseNum = 0; // ID of case
     int n; // # of servers (vertices)
     int m; // # of cables (edges)
     int s; // sender server
@@ -100,10 +96,11 @@ int main()
     
     // # cases
     cin >> N;
-
+	
     // Loop for N cases
     while(N)
     {
+		caseNum++;
         cin >> n >> m >> s >> t;
         // Create graphs
         G.resize((n), vector<int>(n));
@@ -113,7 +110,11 @@ int main()
             G[p0][p1] = w;
             G[p1][p0] = w;
         }
-        dijkstra(n, G, s);
+
+        int shortPath = dijkstra(n, G, s, t);
+		cout << "Case #" << caseNum << ": ";
+		(shortPath != INT_MAX) ? cout << shortPath : cout << "unreachable";
+		cout << '\n';
         G.clear();
         N--;
     }
