@@ -77,7 +77,6 @@ bool isBipartite(vector<vector<bool>> G, int src, int V)
   return true;
 }
 
-// Driver program to test above function
 int main()
 {
   int n; // # nodes (vertices)
