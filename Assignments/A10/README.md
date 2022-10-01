@@ -1,23 +1,12 @@
-## A10 - Everything Djikstra
+## A10 - Everythings Djikstra
 ### Angel Badillo
 ### Description:
 
-This is a simple solution to the "Scissors Rock Paper" UVA problem on https://onlinejudge.org/. Problem ID 514.
+Solutions to UVA problems "Sending Email" (ID 10986) and "" (ID).
 
-### Files
+### Folders
 
-| # | File                    | Description                                                         |
-|:-:|-------------------------|---------------------------------------------------------------------|
-| 1 | [main.cpp](main.cpp)    | Main driver of my program which solves Scissors Rock Paper problem. |
-| 2 | [in1.txt](in1.txt)      | Sample input for program                                            |
-| 3 | [in2.txt](in2.txt)      | Sample input for program                                            |
-| 4 | [in3.txt](in3.txt)      | Sample input for program                                            |
-| 5 | [p10443.pdf](10443.pdf) | Problem statement and guidelines                                    |
-
-### Instructions
-
-- Just compile main.cpp, then run the executable from the command line but be sure to redirect
-input to a correctly formatted input file.
-- Example Command:
-    - `g++ main.cpp -o main`
-    - `./main < <inputfile>`
+| # | Folders                            | Description                        |
+|:-:|------------------------------------|------------------------------------|
+| 1 | [Sending Email](./10986/README.md) | Solution to Sending Email problem. |
+| 2 | []()                               | Solution to problem.               |
