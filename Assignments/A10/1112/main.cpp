@@ -121,18 +121,24 @@ int main()
         cin >> N >> E >> T >> M;
         
         Graph G(N);
+        
+        // Add M edges to graph
         for (int i = 0; i < M; i++)
         {
            cin >> pA >> pB >> w;
            G.addEdge(pA-1, pB-1, w); // orignally designed for 0 to N-1
         }
         
+        // Count # of mice that left the maze
         for(int i = 1; i <= N; i++)
         {
             if(G.shortestPath(i-1,E-1) <= T)
             mExit++;
         }
+
         cout << mExit << newl;
+        if(numCases > 1)
+        cout << newl;
         numCases--;
     }
     return 0;
