@@ -17,7 +17,7 @@ int main()
     int c;                  // # cols
     int n;                  // # n-th day
     vector<string> G;       // Grid
-
+    vector<string> original;// Original grid
     cin >> numCases;
 
     while (numCases)
@@ -29,6 +29,17 @@ int main()
         for (auto &&r : G)
         {
             cin >> r;
+        }
+        
+        original = G;
+
+        for (int i = 0; i < G.size(); i++)
+        {
+            for (int i = 0; i < G[i].size(); i++)
+            {
+                
+            }
+            
         }
         
 
