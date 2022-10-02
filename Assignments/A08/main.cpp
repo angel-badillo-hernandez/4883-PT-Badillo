@@ -8,8 +8,35 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+#define newl '\n'
 int main()
 {
+    int numCases;           // # test cases
+    int r;                  // # rows
+    int c;                  // # cols
+    int n;                  // # n-th day
+    vector<string> G;       // Grid
+
+    cin >> numCases;
+
+    while (numCases)
+    {
+        cin >> r >> c >> n;
+        G.resize(r);
+        
+        // Read each row of the grid
+        for (auto &&r : G)
+        {
+            cin >> r;
+        }
+        
+
+        //TODO: Process fighting here
+
+        if(numCases > 1)
+        cout << newl;
+        numCases--;
+    }
+
     return 0;
 }
