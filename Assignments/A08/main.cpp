@@ -11,6 +11,7 @@
 #include <array>
 using namespace std;
 #define newl '\n'
+using ipair = pair<int, int>;
 
 // Enum for different "lifeforms"
 enum Lifeforms
@@ -19,6 +20,15 @@ enum Lifeforms
     PAPER = 'P',
     SCISSORS = 'S'
 };
+
+// 4 directions
+array<pair<int, int>, 4> Directions = {ipair(-1, 0), ipair(1, 0), ipair(0, -1), ipair(0, 1)};
+
+// Checks if indice are not out of bounds
+bool isInBound(int r, int c, int i, int j)
+{
+    return (i > -1 && j > -1 && i < r && j < c);
+}
 
 // Returns true if i beats j, false otherwise.
 bool doesWin(char i, char j)
@@ -42,8 +52,6 @@ bool doesWin(char i, char j)
     return isVictory;
 }
 
-array<array<int, 2>,4> 
-
 int main()
 {
     int numCases;              // # test cases
@@ -52,6 +60,7 @@ int main()
     int n;                     // # n-th day
     vector<string> G;          // Grid
     vector<string> currentDay; // Original grid
+    
     cin >> numCases;
 
     while (numCases)
@@ -67,22 +76,35 @@ int main()
 
         for (int day = 0; day < n; day++)
         {
+            // Make a copy of original matrix
             currentDay = G;
 
             for (int r = 0; r < G.size(); r++)
             {
                 for (int c = 0; c < G[r].size(); c++)
                 {
+                    for (auto &&dir : Directions)
+                    {
+                        int i = r + dir.first;
+                        int j = c + dir.second;
 
+                        if (isInBound(G.size(), G[r].size(), i, j))
+                            if (doesWin(currentDay[r][c], currentDay[i][j]))
+                                G[i][j] = currentDay[r][c];
+                    }
                 }
             }
         }
 
-        // TODO: Process fighting here
+        // Print the whole final matrix
+        for (auto &&s : G)
+        {
+            cout << s << newl;
+        }
 
-        if (numCases > 1)
-            cout << newl;
         numCases--;
+        if (numCases)
+            cout << newl;
     }
 
     return 0;
