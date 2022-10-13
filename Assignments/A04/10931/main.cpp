@@ -17,16 +17,12 @@ int main()
     bitset<32> val_bin;
     int val;
 
-    while(cin >> val)
+    while(cin >> val && val)
     {
         val_bin = val;
         string str_bin = val_bin.to_string();
         int i = str_bin.find("1");
         str_bin = str_bin.substr(i);
-        cout << "The parity of " << str_bin << " is " << val_bin.count() << " (mod2).";
-        if(val)
-        cout << newl;
-        else
-        break;
+        cout << "The parity of " << str_bin << " is " << val_bin.count() << " (mod 2).\n";
     }
 }
