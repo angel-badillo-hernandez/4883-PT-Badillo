@@ -2,7 +2,7 @@
 ### Angel Badillo
 ### Description:
 
-This is a simple solution to the "One-Two-Three" UVA problem on https://onlinejudge.org/. Problem ID 12289.
+This is a simple solution to the "One-Two-Three" UVA problem on https://onlinejudge.org/. Problem ID 10783.
 
 ### Files
 
