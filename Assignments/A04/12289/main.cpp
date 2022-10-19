@@ -11,9 +11,7 @@
 using namespace std;
 #define newl '\n'
 
-// ─────────────────────────────────────────────────────────────────────────────
-
-
+int main()
 {
     int numCases;                                                            // # test cases
     string num;                                                              // Misspelled word
