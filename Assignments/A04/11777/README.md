@@ -8,7 +8,7 @@ This is a simple solution to the "Automating the Grades" UVA problem on https://
 
 | # | File                   | Description                                                           |
 |:-:|------------------------|-----------------------------------------------------------------------|
-| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Automating the Grades problem. |
+| 1 | [main.py](main.py)     | Main driver of my program which solves Automating the Grades problem. |
 | 2 | [in1.txt](in1.txt)     | Sample input for program                                              |
 | 3 | [11777.pdf](11777.pdf) | Problem statement and guidelines                                      |
 

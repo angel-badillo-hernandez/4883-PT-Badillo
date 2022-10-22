@@ -8,7 +8,7 @@ This is a simple solution to the "Hajj-e-Akbar" UVA problem on https://onlinejud
 
 | # | File                   | Description                                                   |
 |:-:|------------------------|---------------------------------------------------------------|
-| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves One-Two-Three problem. |
+| 1 | [main.py](main.py)     | Main driver of my program which solves One-Two-Three problem. |
 | 2 | [in1.txt](in1.txt)     | Sample input for program                                      |
 | 3 | [12577.pdf](12577.pdf) | Problem statement and guidelines                              |
 

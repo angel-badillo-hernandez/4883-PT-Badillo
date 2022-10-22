@@ -6,11 +6,11 @@ This is a simple solution to the "Parity" UVA problem on https://onlinejudge.org
 
 ### Files
 
-| # | File                   | Description                                                |
-|:-:|------------------------|------------------------------------------------------------|
-| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Parity problem.|
-| 2 | [in1.txt](in1.txt)     | Sample input for program                                   |
-| 3 | [10931.pdf](10931.pdf)     | Problem statement and guidelines                           |
+| # | File                   | Description                                            |
+|:-:|------------------------|--------------------------------------------------------|
+| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Parity problem. |
+| 2 | [in1.txt](in1.txt)     | Sample input for program                               |
+| 3 | [10931.pdf](10931.pdf) | Problem statement and guidelines                       |
 
 ### Instructions
 
