@@ -6,8 +6,13 @@
 '''
 
 # read # of cases
-numTestCases:int = int(input())
+numTestCases: int = int(input())
 
 for t in range(0, numTestCases):
-    n:int = int(input())
-    result:list[int] = list(map(int, str(1)))
+    n: int = int(input())
+    # performs ops and discard negative sign
+    result: int = abs((((n * 567 // 9) + 7492) *235 // 47) -498)
+    # convert int to list of digits
+    res: list[int] = list(map(int, str(result)))
+    # print tens place digit
+    print(f"{res[len(res)-2]}")
