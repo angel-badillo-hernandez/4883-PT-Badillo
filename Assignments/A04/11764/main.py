@@ -8,20 +8,27 @@
 numCases: int = int(input())  # of test cases
 
 for t in range(1,numCases+1):
-                  # decrement # of test case
     numWalls: int = int(input())  # of walls
-    wallHeights: list[int] = []   # list of heights
+    wallHeights: list = []        # list of heights
     highJump: int = 0
     shortJump: int = 0
 
-    for i in range(0, numWalls):
-        wallHeights.append(int(input()))
-        
+    # Read full line of input and split on spaces
+    wallHeights = input().split(' ')
+    wallHeights = list(map(int,wallHeights))
+
+    # keep track of prev
     prev: int = wallHeights[0]
-    for j in range(0, numWalls):
+
+    # loop through list to test jumps
+    for j in range(1, numWalls):
+        # if current is greater than prev, high jump
         if wallHeights[j] > prev:
             highJump += 1
+        # if current is less than prev, low jump
         elif wallHeights[j] < prev:
             shortJump += 1
-    
-    print(f"Case {t}: {highJump} {shortJump}\n")
+        # update prev
+        prev = wallHeights[j]
+    # print results
+    print(f"Case {t}: {highJump} {shortJump}")

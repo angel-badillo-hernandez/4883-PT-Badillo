@@ -13,3 +13,4 @@ Solutions to beginner difficulty UVA problems.
 | 3 | [Parity](./10931/README.md)        | Solution to Parity problem.        |
 | 4 | [Odd Sum](./10783/README.md)       | Solution to Odd Sum problem.       |
 | 5 | [Hajj-e-Akbar](./12577/README.md)  | Solution to Hajj-e-Akbar problem.  |
+| 6 | [Jumping Mario](./11764/README.md) | Solution to Jumping Mario problem. |
