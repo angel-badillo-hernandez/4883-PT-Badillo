@@ -16,3 +16,4 @@ Solutions to beginner difficulty UVA problems.
 | 6 | [Jumping Mario](./11764/README.md)         | Solution to Jumping Mario problem.         |
 | 7 | [Automating the Grades](./11777/README.md) | Solution to Automating the Grades problem. |
 | 8 | [Relational Operators](./11172/README.md)  | Solution to Relational Operators problem.  |
+| 9 | [Above Average](./10370/README.md)         | Solution to Above Average problem.         |
