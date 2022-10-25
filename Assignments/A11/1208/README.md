@@ -8,7 +8,7 @@ This is a simple solution to the "Oreon" UVA problem on https://onlinejudge.org/
 
 | # | File                   | Description                                                |
 |:-:|------------------------|------------------------------------------------------------|
-| 1 | [main.cpp](main.cpp)   | Main driver of my program which solves Dark Roads problem. |
+| 1 | [main.py](main.py)     | Main driver of my program which solves Oreon problem.      |
 | 2 | [in1.txt](in1.txt)     | Sample input for program                                   |
 | 3 | [1208.pdf](1208.pdf)   | Problem statement and guidelines                           |
 
