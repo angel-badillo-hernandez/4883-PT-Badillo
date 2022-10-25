@@ -14,8 +14,7 @@ This is a simple solution to the "Automating the Grades" UVA problem on https://
 
 ### Instructions
 
-- Just compile main.cpp, then run the executable from the command line but be sure to redirect
+- Just run main.py, but be sure to redirect
 input to a correctly formatted input file.
 - Example Command:
-    - `g++ main.cpp -o main`
-    - `./main < <inputfile>`
+    - `python main.py < <inputfile>`
